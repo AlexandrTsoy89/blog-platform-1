@@ -1,0 +1,10 @@
+.container {
+  width: 940px;
+  margin: 32px auto;
+}
+
+.content {
+  /* display: grid;
+  grid-template-columns: 3fr 1fr; */
+  gap: 40px;
+}
