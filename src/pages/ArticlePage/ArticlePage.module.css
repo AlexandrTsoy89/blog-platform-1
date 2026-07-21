@@ -1,0 +1,47 @@
+.page {
+  max-width: 940px;
+  margin: 30px auto;
+}
+
+.article {
+  background: white;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin: 20px 0;
+  color: #666;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.favorite {
+  margin-top: 16px;
+  padding: 6px 12px;
+  border: 1px solid #5cb85c;
+  background: white;
+  color: #5cb85c;
+  border-radius: 5px;
+}
+
+.body {
+  margin-top: 40px;
+  line-height: 1.7;
+}

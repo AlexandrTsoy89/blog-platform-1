@@ -8,3 +8,7 @@ export const getArticles = (limit = 5, offset = 0) => {
     },
   });
 };
+
+export const getArticle = (slug) => {
+  return api.get(`/articles/${slug}`);
+};

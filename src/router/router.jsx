@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import MainLayout from '@/layouts/MainLayout/MainLayout';
 import HomePage from '@/pages/HomePage';
-import ArticlePage from '@/pages/ArticlePage';
+import ArticlePage from '@/pages/ArticlePage/ArticlePage';
 import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
 
 const router = createBrowserRouter([

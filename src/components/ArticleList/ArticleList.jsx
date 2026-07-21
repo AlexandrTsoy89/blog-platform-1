@@ -5,10 +5,7 @@ function ArticleList({ articles }) {
   return (
     <>
       {articles.map((article) => (
-        <ArticleCard
-          key={article.slug}
-          article={article}
-        />
+        <ArticleCard key={article.slug} article={article} />
       ))}
     </>
   );

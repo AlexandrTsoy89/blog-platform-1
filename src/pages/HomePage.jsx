@@ -4,6 +4,7 @@ import ArticleList from '@/components/ArticleList/ArticleList';
 import Pagination from '@/components/Pagination/Pagination';
 import { useEffect, useState } from 'react';
 import { getArticles } from '@/api/articles';
+import '@/styles/Index.css';
 
 import styles from './HomePage.module.css';
 
@@ -14,11 +15,9 @@ function HomePage() {
   const [page, setPage] = useState(1);
   const [articlesCount, setArticlesCount] = useState(0);
   const totalPages = Math.ceil(articlesCount / 5);
+  const limit = 5;
   useEffect(() => {
-    const limit = 5;
     const offset = (page - 1) * limit;
-
-    setLoading(true);
 
     getArticles(limit, offset)
       .then((response) => {
