@@ -44,7 +44,7 @@ function ArticlePage() {
     <div className={styles.page}>
       <article className={styles.article}>
         <div className={styles.header}>
-          <div>
+          <div className={styles.content}>
             <h1 className={styles.title}>{article.title}</h1>
 
             <div className={styles.tags}>
@@ -56,21 +56,21 @@ function ArticlePage() {
             <p className={styles.description}>{article.description}</p>
           </div>
 
-          <div className={styles.info}>
-            <UserInfo
-              username={article.author.username}
-              date={formatDate(article.createdAt)}
-              image={article.author.image}
-            />
-
-            <button className={styles.favorite}>
-              ❤ {article.favoritesCount}
-            </button>
-          </div>
+          <button className={styles.favorite}>
+            ❤ {article.favoritesCount}
+          </button>
         </div>
 
         <div className={styles.body}>
           <ReactMarkdown>{article.body}</ReactMarkdown>
+        </div>
+
+        <div className={styles.author}>
+          <UserInfo
+            username={article.author.username}
+            date={formatDate(article.createdAt)}
+            image={article.author.image}
+          />
         </div>
       </article>
     </div>

@@ -8,6 +8,9 @@ function UserInfo({ username, date, image }) {
         className={styles.avatar}
         src={image || defaultAvatar}
         alt={username}
+        onError={(e) => {
+          e.target.src = defaultAvatar;
+        }}
       />
 
       <div>

@@ -23,9 +23,9 @@
 }
 
 .active {
-  background: #1890ff;
+  background: #5cb85c;
   color: white;
-  border-color: #1890ff;
+  border-color: #5cb85c;
 }
 
 .page:disabled {
