@@ -1,0 +1,45 @@
+.field {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  height: 46px;
+
+  padding: 0 18px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #5cb85c;
+}
+
+.error {
+  border-color: #f5222d;
+}
+
+.errorText {
+  margin-top: 6px;
+
+  display: block;
+
+  color: #f5222d;
+  font-size: 12px;
+}

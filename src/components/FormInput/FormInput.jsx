@@ -1,0 +1,18 @@
+import styles from './FormInput.module.css';
+
+function FormInput({ label, error, className = '', ...props }) {
+  return (
+    <div className={styles.field}>
+      {label && <label className={styles.label}>{label}</label>}
+
+      <input
+        className={`${styles.input} ${error ? styles.error : ''} ${className}`}
+        {...props}
+      />
+
+      {error && <span className={styles.errorText}>{error}</span>}
+    </div>
+  );
+}
+
+export default FormInput;

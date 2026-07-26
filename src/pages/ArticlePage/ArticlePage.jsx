@@ -43,17 +43,15 @@ function ArticlePage() {
   return (
     <div className={styles.page}>
       <article className={styles.article}>
-        <div className={styles.header}>
-          <div className={styles.content}>
+        <div className={styles.hero}>
+          <div className={styles.heroContent}>
             <h1 className={styles.title}>{article.title}</h1>
 
-            <div className={styles.tags}>
-              {article.tagList.map((tag) => (
-                <Tag key={tag}>{tag}</Tag>
-              ))}
-            </div>
-
-            <p className={styles.description}>{article.description}</p>
+            <UserInfo
+              username={article.author.username}
+              date={formatDate(article.createdAt)}
+              image={article.author.image}
+            />
           </div>
 
           <button className={styles.favorite}>
@@ -61,16 +59,15 @@ function ArticlePage() {
           </button>
         </div>
 
+        <p className={styles.description}>{article.description}</p>
         <div className={styles.body}>
           <ReactMarkdown>{article.body}</ReactMarkdown>
         </div>
 
-        <div className={styles.author}>
-          <UserInfo
-            username={article.author.username}
-            date={formatDate(article.createdAt)}
-            image={article.author.image}
-          />
+        <div className={styles.tags}>
+          {article.tagList.map((tag) => (
+            <Tag key={tag}>{tag}</Tag>
+          ))}
         </div>
       </article>
     </div>
