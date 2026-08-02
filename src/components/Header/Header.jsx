@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import AuthContext from '@/context/AuthContext';
 import edit from '@/assets/edit.png';
 import settings from '@/assets/settings.png';
-import userIcon from '@/assets/user.png';
+import userIcon from '@/assets/userIcon.png';
 
 function Header() {
   const { user } = useContext(AuthContext);

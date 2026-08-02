@@ -1,5 +1,5 @@
 import styles from './UserInfo.module.css';
-import defaultAvatar from '@/assets/default-avatar.png';
+
 import icon from '@/assets/icon.png';
 
 function UserInfo({ username, date, image }) {
