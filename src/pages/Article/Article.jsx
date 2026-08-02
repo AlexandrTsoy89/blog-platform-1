@@ -8,9 +8,9 @@ import Tag from '@/components/Tag/Tag';
 import { getArticle } from '@/api/articles';
 import { formatDate } from '@/utils/formatDate';
 
-import styles from './ArticlePage.module.css';
+import styles from './Article.module.css';
 
-function ArticlePage() {
+function Article() {
   const { slug } = useParams();
 
   const [article, setArticle] = useState(null);
@@ -54,9 +54,9 @@ function ArticlePage() {
             />
           </div>
 
-          <button className={styles.favorite}>
+          {/* <button className={styles.favorite}>
             ❤ {article.favoritesCount}
-          </button>
+          </button> */}
         </div>
 
         <p className={styles.description}>{article.description}</p>
@@ -74,4 +74,4 @@ function ArticlePage() {
   );
 }
 
-export default ArticlePage;
+export default Article;

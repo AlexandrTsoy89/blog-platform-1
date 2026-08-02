@@ -6,9 +6,9 @@ import { useEffect, useState } from 'react';
 import { getArticles } from '@/api/articles';
 import '@/styles/Index.css';
 
-import styles from './HomePage.module.css';
+import styles from './Home.module.css';
 
-function HomePage() {
+function Home() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -63,4 +63,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;

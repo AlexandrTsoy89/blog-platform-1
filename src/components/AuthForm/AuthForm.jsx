@@ -1,5 +1,6 @@
 import FormInput from '@/components/FormInput/FormInput';
 import FormButton from '@/components/FormButton/FormButton';
+import FormCheckbox from '../FormCheckbox/FormCheckbox';
 
 import styles from './AuthForm.module.css';
 
@@ -14,9 +15,18 @@ function AuthForm({ title, fields, buttonText, register, errors, onSubmit }) {
           type={field.type}
           placeholder={field.placeholder}
           error={errors[field.name]?.message}
-          {...register(field.name)}
+          {...register(field.name, field.rules)}
         />
       ))}
+
+      {title === 'Sign Up' && (
+        <FormCheckbox
+          name="agreement"
+          label="I agree to the processing of my personal information"
+          register={register}
+          error={errors.agreement}
+        />
+      )}
 
       <div className={styles.actions}>
         <FormButton>{buttonText}</FormButton>

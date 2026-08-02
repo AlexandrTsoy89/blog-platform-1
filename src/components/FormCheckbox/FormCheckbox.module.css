@@ -1,18 +1,22 @@
-.checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-
-  margin: 24px 0;
-
-  font-size: 14px;
-  line-height: 1.5;
-
-  color: #595959;
-
-  cursor: pointer;
+.wrapper {
+  margin-top: 20px;
 }
 
-.checkbox input {
-  margin-top: 3px;
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.error {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #f5222d;
+  font-size: 12px;
 }

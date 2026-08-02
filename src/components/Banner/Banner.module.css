@@ -12,11 +12,16 @@
 }
 
 h1 {
+  font-family: 'Titillium-Bold', sans-serif;
   margin: 0;
   font-size: 56px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
 }
 
 p {
-  margin-top: 12px;
-  font-size: 22px;
+  font-family: 'SourceSansPro-Light', sans-serif;
+  margin-top: 2px;
+  font-size: 24px;
 }

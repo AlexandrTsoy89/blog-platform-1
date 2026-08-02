@@ -1,50 +1,55 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import MainLayout from '@/layouts/MainLayout/MainLayout';
-import HomePage from '@/pages/HomePage';
-import ArticlePage from '@/pages/ArticlePage/ArticlePage';
-import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
-import SignInPage from '@/pages/SignInPage/SignInPage';
-import SignUpPage from '@/pages/SignUpPage/SignUpPage';
-import SettingsPage from '@/pages/SettingsPage/SettingsPage';
-import ProfilePage from '@/pages/ProfilePage/ProfilePage';
+import Home from '@/pages/Home/Home';
+import Article from '@/pages/Article/Article';
+import NotFound from '../pages/NotFound/NotFound';
+import SignIn from '@/pages/SignIn/SignIn';
+import SignUp from '@/pages/SignUp/SignUp';
+import Settings from '@/pages/Settings/Settings';
+import Profile from '@/pages/Profile/Profile';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
-    errorElement: <NotFoundPage />,
+    errorElement: <NotFound />,
 
     children: [
       {
         index: true,
-        element: <HomePage />,
+        element: <Home />,
+      },
+
+      {
+        path: 'test',
+        element: <h1>TEST PAGE</h1>,
       },
 
       {
         path: 'articles',
-        element: <HomePage />,
+        element: <Home />,
       },
 
       {
         path: 'articles/:slug',
-        element: <ArticlePage />,
+        element: <Article />,
       },
       {
         path: 'sign-in',
-        element: <SignInPage />,
+        element: <SignIn />,
       },
       {
         path: 'sign-up',
-        element: <SignUpPage />,
+        element: <SignUp />,
       },
       {
         path: 'settings',
-        element: <SettingsPage />,
+        element: <Settings />,
       },
       {
         path: 'profile',
-        element: <ProfilePage />,
+        element: <Profile />,
       },
     ],
   },

@@ -18,13 +18,14 @@
 }
 
 .title {
-  font-size: 52px;
+  font-size: 46px;
   font-weight: 700;
   line-height: 1.05;
 
   color: white;
 
   margin-bottom: 24px;
+  text-decoration: none;
 }
 
 .description {
