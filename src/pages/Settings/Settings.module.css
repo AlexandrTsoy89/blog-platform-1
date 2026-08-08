@@ -1,0 +1,130 @@
+.page {
+  padding-top: 45px;
+}
+
+.container {
+  width: 505px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 0 25px;
+
+  text-align: center;
+
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #333;
+
+  /* Убираем подчёркивание из общего стиля h1 */
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+
+  border: 1px solid #b5b5b5;
+  border-radius: 8px;
+
+  font-family: 'SourceSansPro-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  outline: none;
+}
+
+.input {
+  height: 51px;
+
+  padding: 0 24px;
+
+  margin-bottom: 17px;
+}
+
+.textarea {
+  height: 120px;
+
+  padding: 18px 17px;
+
+  margin-bottom: 17px;
+
+  resize: none;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #5cb85c;
+}
+
+.button {
+  align-self: flex-end;
+
+  height: 50px;
+
+  padding: 0 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #5cb85c;
+  color: white;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4cae4c;
+}
+
+.logout {
+  margin-top: 20px;
+
+  padding: 8px 17px;
+
+  border: 1px solid #d9534f;
+  border-radius: 6px;
+
+  background-color: white;
+  color: #d9534f;
+
+  font-family: 'SourceSansPro-Regular', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #d9534f;
+  color: white;
+}
+
+.error {
+  border-color: #f44336;
+}
+
+.errorMessage {
+  margin: -10px 0 10px;
+  color: #f44336;
+  font-size: 14px;
+}

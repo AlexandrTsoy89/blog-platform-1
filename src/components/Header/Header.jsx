@@ -32,7 +32,7 @@ function Header() {
           {user ? (
             <>
               <NavLink
-                to="/editor"
+                to="/new-post"
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : styles.link
                 }

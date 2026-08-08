@@ -15,9 +15,9 @@
 }
 
 .logo {
-  font-family: 'Titillium-Bold', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
   color: #5cb85c;
   text-decoration: none;
 }
@@ -37,4 +37,17 @@
 .activeLink {
   color: #5cb85c;
   font-weight: 600;
+}
+
+.link,
+.activeLink {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  display: block;
 }

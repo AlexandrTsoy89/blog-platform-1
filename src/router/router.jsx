@@ -8,6 +8,7 @@ import SignIn from '@/pages/SignIn/SignIn';
 import SignUp from '@/pages/SignUp/SignUp';
 import Settings from '@/pages/Settings/Settings';
 import Profile from '@/pages/Profile/Profile';
+import NewPost from '@/pages/NewPost/NewPost';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: 'profile',
         element: <Profile />,
+      },
+      {
+        path: 'new-post',
+        element: <NewPost />,
       },
     ],
   },

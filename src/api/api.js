@@ -4,4 +4,17 @@ const api = axios.create({
   baseURL: 'https://realworld.habsida.net/api',
 });
 
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+
+  console.log('TOKEN:', token);
+  console.log('AUTHORIZATION:', config.headers.Authorization);
+
+  return config;
+});
+
 export default api;
