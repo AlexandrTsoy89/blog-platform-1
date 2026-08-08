@@ -1,16 +1,16 @@
 import styles from './UserInfo.module.css';
 
-import icon from '@/assets/icon.png';
+import Icon from '@/assets/Icon.png';
 
 function UserInfo({ username, date, image }) {
   return (
     <div className={styles.userInfo}>
       <img
         className={styles.avatar}
-        src={image || icon}
+        src={image || Icon}
         alt={username}
         onError={(e) => {
-          e.target.src = icon;
+          e.target.src = Icon;
         }}
       />
 
